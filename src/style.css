@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#slider-work .swiper-slide-next img {
+  @apply !w-[443px] !h-[291px];
+}
+
+#slider-work .swiper-slide-next {
+  @apply relative z-[2];
+}
+
+@layer base {
+  html {
+    @apply bg-[#F9F9FE] text-[#545454] text-[22px] font-light leading-[25.78px] font-Roboto overflow-x-hidden scroll-smooth;
+  }
+
+  .container-main {
+    @apply max-w-[1600px] w-full px-2.5;
+  }
+
+  button {
+    @apply border border-[#605EB3] h-[60px] flex justify-center items-center font-light text-[#605EB3] text-center text-[26px] leading-[30.47px] xl:min-w-[300px];
+  }
+
+  h2,
+  h3,
+  h4 {
+    @apply font-normal text-[60px] leading-[70.31px] text-[#333333] uppercase;
+  }
+
+  h6 {
+    @apply text-[30px] font-normal leading-[35.16px] text-[#545454];
+  }
+}
+
+@layer components {
+  .direction-list span {
+    @apply text-[30px] font-normal leading-[35.16px] text-[#545454] mt-5;
+  }
+
+  .list-edge span {
+    @apply text-[30px] font-normal leading-[35.16px] text-[#545454];
+  }
+
+  #slider-work .swiper-slide {
+    @apply !flex justify-end items-end h-[519px];
+  }
+
+  #slider-work .swiper-slide img {
+    @apply h-[519px] w-full transition-all duration-500;
+  }
+}
