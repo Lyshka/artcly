@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <load src="src/components/Header/" />
-    <load src="src/components/Home/Main/" />
 
-    <div class="space-y-[200px] mt-[111px]">
-      <load src="src/components/Home/Direction/" />
-      <load src="src/components/Home/Edge/" />
-      <load src="src/components/Home/Work/" />
+    <div class="flex-1">
+      <load src="src/components/Home/Main/" />
+
+      <div class="space-y-[200px] mt-[111px]">
+        <load src="src/components/Home/Direction/" />
+        <load src="src/components/Home/Edge/" />
+        <load src="src/components/Home/Work/" />
+
+        <div class="space-y-[100px]">
+          <load src="src/components/Home/About/" />
+          <load src="src/components/Home/Clients/" />
+        </div>
+
+        <load src="src/components/Home/Quest/" />
+        <load src="src/components/General/Form/" />
+      </div>
     </div>
 
     <load src="src/components/Footer/" />

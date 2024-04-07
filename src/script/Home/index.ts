@@ -1,1 +1,2 @@
 import "./workSlider";
+import "./quest";

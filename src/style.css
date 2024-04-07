@@ -5,11 +5,23 @@
 @tailwind utilities;
 
 #slider-work .swiper-slide-next img {
-  @apply !w-[443px] !h-[291px];
+  @apply !w-[443px] !h-[291px] border border-[#F7F7F7];
 }
 
 #slider-work .swiper-slide-next {
-  @apply relative z-[2];
+  @apply opacity-80;
+}
+
+.questCard .questText.open {
+  @apply grid-rows-1 mt-[38px];
+}
+
+.questCard .arrowIconColor.active {
+  @apply fill-[#B2B2B2];
+}
+
+.questCard .arrowIcon.active {
+  @apply -scale-y-100;
 }
 
 @layer base {
@@ -33,6 +45,10 @@
 
   h6 {
     @apply text-[30px] font-normal leading-[35.16px] text-[#545454];
+  }
+
+  input {
+    @apply border-b border-[#B2B2B2] outline-none ring-0 bg-transparent w-full;
   }
 }
 

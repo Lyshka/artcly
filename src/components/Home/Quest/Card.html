@@ -1,0 +1,41 @@
+<div
+  class="py-[38px] first:pt-0 border-b border-[#ABAAD8] group px-5 questCard"
+  role="button"
+>
+  <div class="flex justify-between items-center gap-5">
+    <h6 class="group-hover:text-[#605EB3] transition-all duration-300">
+      {=$title}
+    </h6>
+
+    <svg
+      class="flex-shrink-0 arrowIcon transform transition-all duration-500"
+      width="17"
+      height="25"
+      viewBox="0 0 17 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_2690_6090)">
+        <path
+          class="arrowIconColor transition-all duration-500"
+          d="M8.04289 24.7071C8.43342 25.0976 9.06658 25.0976 9.45711 24.7071L15.8211 18.3431C16.2116 17.9526 16.2116 17.3195 15.8211 16.9289C15.4305 16.5384 14.7974 16.5384 14.4069 16.9289L8.75 22.5858L3.09315 16.9289C2.70262 16.5384 2.06946 16.5384 1.67893 16.9289C1.28841 17.3195 1.28841 17.9526 1.67893 18.3431L8.04289 24.7071ZM9.75 24L9.75 3.60725e-08L7.75 -3.60725e-08L7.75 24L9.75 24Z"
+          fill="#605EB3"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2690_6090">
+          <rect
+            width="16.2491"
+            height="25"
+            fill="white"
+            transform="translate(0.75)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="grid grid-rows-0 overflow-hidden duration-500 transition-all questText">
+    <p class="min-h-0">{=$text}</p>
+  </div>
+</div>
