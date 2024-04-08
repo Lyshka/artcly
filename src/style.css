@@ -26,7 +26,11 @@
 
 @layer base {
   html {
-    @apply bg-[#F9F9FE] text-[#545454] text-[22px] font-light leading-[25.78px] font-Roboto overflow-x-hidden scroll-smooth;
+    @apply bg-[#F9F9FE] text-[#545454] xl:text-[22px] text-base font-light xl:leading-[25.78px] leading-[18.75px] font-Roboto overflow-x-hidden scroll-smooth overflow-y-hidden;
+  }
+
+  body {
+    @apply flex flex-col min-h-screen relative;
   }
 
   .container-main {
@@ -34,7 +38,7 @@
   }
 
   button {
-    @apply border border-[#605EB3] h-[60px] flex justify-center items-center font-light text-[#605EB3] text-center text-[26px] leading-[30.47px] xl:min-w-[300px];
+    @apply border border-[#605EB3] xl:h-[60px] h-12 flex justify-center items-center font-light text-[#605EB3] text-center xl:text-[26px] text-lg xl:leading-[30.47px] leading-[21.09px] xl:min-w-[300px] min-w-full;
   }
 
   h2,
@@ -67,5 +71,42 @@
 
   #slider-work .swiper-slide img {
     @apply h-[519px] w-full transition-all duration-500;
+  }
+
+  .buttonMenuHandle.open {
+    @apply opacity-100;
+  }
+
+  #menu.open {
+    @apply opacity-100 translate-y-0 xl:top-[113.93px] top-[44px];
+  }
+
+  #menu ul .menu-item {
+    @apply relative;
+  }
+
+  #menu .menu a {
+    @apply text-[#333333] text-[60px] font-normal leading-[70.31px] text-right uppercase hover:text-[#4042E2] transition-all duration-300;
+  }
+
+  #menu .sub-menu a {
+    @apply leading-[35.16px] text-nowrap hover:text-[#4042E2] text-[30px] font-normal transition-all duration-300;
+    text-transform: none;
+  }
+
+  #menu a.active {
+    @apply text-[#4042E2];
+  }
+
+  #menu .sub-menu {
+    @apply xl:absolute left-full xl:pl-[60px] top-0 overflow-hidden z-[-1] opacity-0 flex flex-col gap-[26px] transition-all duration-300;
+  }
+
+  #menu .sub-menu.active {
+    @apply overflow-visible z-[0] opacity-100;
+  }
+
+  #mobileMenu .item-mobile-menu a {
+    @apply text-[#333333] text-[26px] font-normal leading-[30.47px] uppercase;
   }
 }
