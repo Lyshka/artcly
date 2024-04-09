@@ -1,7 +1,10 @@
+import { isMobileDevice } from "../utils";
+
 const headerMenu = () => {
   const openMenu = document.getElementById("openMenu") as HTMLButtonElement;
   const closeMenu = document.getElementById("closeMenu") as HTMLButtonElement;
   const menu = document.getElementById("menu");
+  const mobileMenu = document.getElementById("mobileMenu");
   const HTMLALL = document.querySelector("html") as HTMLElement;
 
   closeMenu.onclick = () => {
@@ -10,10 +13,20 @@ const headerMenu = () => {
 
     if (closeMenu.classList.contains("open")) {
       HTMLALL.style.overflowY = "hidden";
-      menu?.classList.add("open");
+
+      if (isMobileDevice()) {
+        mobileMenu?.classList.add("open");
+      } else {
+        menu?.classList.add("open");
+      }
     } else {
       HTMLALL.style.overflowY = "scroll";
-      menu?.classList.remove("open");
+
+      if (isMobileDevice()) {
+        mobileMenu?.classList.remove("open");
+      } else {
+        menu?.classList.remove("open");
+      }
     }
   };
 };

@@ -8,19 +8,19 @@
   <body>
     <load src="src/components/Header/" />
     <main class="flex-1 justify-center items-center flex">
-      <div class="flex justify-center items-center flex-col gap-[60px]">
-        <div class="flex items-center flex-col gap-10">
-          <h1 class="text-[#333333] text-[70px] font-normal leading-[82.03px]">
+      <div class="flex justify-center items-center flex-col xl:gap-[60px] gap-8">
+        <div class="flex items-center flex-col xl:gap-10 gap-6">
+          <h1 class="text-[#333333] xl:text-[70px] text-5xl font-normal xl:leading-[82.03px] leading-normal xl:text-left text-center">
             Спасибо за вашу заявку
           </h1>
 
-          <p>Наш специалист свяжется с с Вами в ближайшее время</p>
+          <p class="xl:text-left text-center">Наш специалист свяжется с с Вами в ближайшее время</p>
         </div>
 
         <a href="/">
           <button
             role="button"
-            class="py-[15px] w-full text-[#605EB3] flex gap-[30px] items-center justify-start text-nowrap border-none"
+            class="xl:py-[15px] py-2.5 w-full text-[#605EB3] flex xl:gap-[30px] gap-5 items-center justify-start text-nowrap border-none xl:text-base text-sm"
           >
             <span>Вернуться на главную</span>
 
@@ -43,7 +43,7 @@
       </div>
 
       <svg
-        class="absolute bottom-0 right-0"
+        class="custom:block hidden absolute bottom-0 right-0"
         width="564"
         height="482"
         viewBox="0 0 564 482"
@@ -724,7 +724,7 @@
         />
       </svg>
       <svg
-        class="absolute left-0 bottom-[45.72px]"
+        class="custom:block hidden absolute left-0 bottom-[45.72px]"
         width="295"
         height="262"
         viewBox="0 0 295 262"
