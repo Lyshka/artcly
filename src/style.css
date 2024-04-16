@@ -13,7 +13,7 @@
 }
 
 .questCard .questText.open {
-  @apply grid-rows-1 mt-[38px];
+  @apply grid-rows-1 xl:mt-[38px] mt-4;
 }
 
 .questCard .arrowIconColor.active {
