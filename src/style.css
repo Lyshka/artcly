@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 #slider-work .swiper-slide-next img {
-  @apply !w-[443px] !h-[291px] border border-[#F7F7F7];
+  @apply xl:!w-[443px] xl:!h-[291px] xl:border border-[#F7F7F7];
 }
 
 #slider-work .swiper-slide-next {
-  @apply opacity-80;
+  @apply xl:opacity-80;
 }
 
 .questCard .questText.open {
@@ -58,11 +58,11 @@
 
 @layer components {
   .direction-list span {
-    @apply text-[30px] font-normal leading-[35.16px] text-[#545454] mt-5;
+    @apply xl:text-[30px] text-[26px] font-normal xl:leading-[35.16px] leading-[30.47px] text-[#545454] xl:mt-5;
   }
 
   .list-edge span {
-    @apply text-[30px] font-normal leading-[35.16px] text-[#545454];
+    @apply xl:text-[30px] text-[26px] font-normal xl:leading-[35.16px] leading-[30.47px] text-[#545454];
   }
 
   #slider-work .swiper-slide {
@@ -117,5 +117,13 @@
 
   .btn-with-arrow svg {
     @apply xl:max-w-[61px] max-w-10 flex-shrink-0;
+  }
+
+  .containerSelectService:has([type="radio"]:checked) .containerIcon {
+    @apply outline-[#5957BB];
+  }
+
+  .containerSelectService:has([type="radio"]:checked) .iconChecked {
+    @apply opacity-100;
   }
 }
