@@ -37,8 +37,16 @@
     @apply max-w-[1600px] w-full px-2.5;
   }
 
+  .container-contact {
+    @apply max-w-[1219px] w-full px-2.5;
+  }
+
   button {
-    @apply border border-[#605EB3] xl:h-[60px] h-12 flex justify-center items-center font-light text-[#605EB3] text-center xl:text-[26px] text-lg xl:leading-[30.47px] leading-[21.09px] xl:min-w-[300px] min-w-full;
+    @apply border border-[#605EB3] xl:h-[60px] h-12 flex justify-center items-center font-light text-[#605EB3] text-center xl:text-[26px] text-lg xl:leading-[30.47px] leading-[21.09px] xl:min-w-[300px] min-w-full transition-all duration-300;
+  }
+
+  a {
+    @apply transition-all duration-300;
   }
 
   h2,
@@ -125,5 +133,46 @@
 
   .containerSelectService:has([type="radio"]:checked) .iconChecked {
     @apply opacity-100;
+  }
+
+  .navServiceButton.current {
+    @apply border-[#605EB3] text-[#605EB3];
+  }
+
+  #listServicePage.open {
+    @apply grid-rows-1 mt-2.5;
+  }
+
+  #openServiceFilter.active {
+    @apply text-[#A59D9D];
+  }
+
+  #openServiceFilter.active .iconArrow {
+    @apply transform -scale-y-100;
+  }
+
+  #openServiceFilter.active .iconArrow path {
+    @apply fill-[#B2B2B2];
+  }
+
+  .serviceSingleAnimation {
+    animation-name: scrollDown;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .serviceSingleAnimation:hover {
+    animation-play-state: running;
+  }
+
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(calc(-100% + 861px));
+    }
   }
 }

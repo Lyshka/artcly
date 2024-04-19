@@ -5,14 +5,14 @@ const headerMenu = () => {
   const closeMenu = document.getElementById("closeMenu") as HTMLButtonElement;
   const menu = document.getElementById("menu");
   const mobileMenu = document.getElementById("mobileMenu");
-  const HTMLALL = document.querySelector("html") as HTMLElement;
+  // const HTMLALL = document.querySelector("html") as HTMLElement;
 
   closeMenu.onclick = () => {
     closeMenu?.classList.toggle("open");
     openMenu?.classList.toggle("open");
 
     if (closeMenu.classList.contains("open")) {
-      HTMLALL.style.overflowY = "hidden";
+      // HTMLALL.style.overflowY = "hidden";
 
       if (isMobileDevice()) {
         mobileMenu?.classList.add("open");
@@ -20,7 +20,7 @@ const headerMenu = () => {
         menu?.classList.add("open");
       }
     } else {
-      HTMLALL.style.overflowY = "scroll";
+      // HTMLALL.style.overflowY = "scroll";
 
       if (isMobileDevice()) {
         mobileMenu?.classList.remove("open");

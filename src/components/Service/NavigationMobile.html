@@ -1,0 +1,60 @@
+<nav class="xl:hidden block">
+  <div class="flex items-center justify-between">
+    <button
+      class="min-w-fit h-auto py-1.5 px-[28.15px] border-[#A59D9D] text-[#A59D9D] navServiceButton"
+    >
+      Все
+    </button>
+
+    <button
+      id="openServiceFilter"
+      class="flex items-center gap-[15px] min-w-fit border-none transition-all duration-500"
+    >
+      Еще
+
+      <svg
+        width="16"
+        height="25"
+        class="iconArrow transition-all duration-500"
+        viewBox="0 0 16 25"
+        fill="none"
+        class="transition-all duration-500"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="transition-all duration-500"
+          d="M8.45711 24.7071C8.06658 25.0976 7.43342 25.0976 7.04289 24.7071L0.678932 18.3431C0.288408 17.9526 0.288408 17.3195 0.678932 16.9289C1.06946 16.5384 1.70262 16.5384 2.09315 16.9289L7.75 22.5858L13.4069 16.9289C13.7974 16.5384 14.4305 16.5384 14.8211 16.9289C15.2116 17.3195 15.2116 17.9526 14.8211 18.3431L8.45711 24.7071ZM6.75 24L6.75 -7.1077e-10L8.75 7.1077e-10L8.75 24L6.75 24Z"
+          fill="#605EB3"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <div
+    id="listServicePage"
+    class="grid grid-rows-0 overflow-hidden duration-1000 transition-all"
+  >
+    <div class="min-h-0 flex flex-col gap-2.5">
+      <load
+        src="src/components/Service/Button.html"
+        title="Landing page"
+        class="current"
+      />
+      <load
+        src="src/components/Service/Button.html"
+        title="Многостраничный сайт"
+        class=""
+      />
+      <load
+        src="src/components/Service/Button.html"
+        title="Интернет-магазин"
+        class=""
+      />
+      <load
+        src="src/components/Service/Button.html"
+        title="Продвижение"
+        class=""
+      />
+    </div>
+  </div>
+</nav>
