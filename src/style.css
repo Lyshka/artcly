@@ -175,4 +175,47 @@
       transform: translateY(calc(-100% + 861px));
     }
   }
+
+  .aboutTeamCard.active {
+    @apply xl:w-[790px] xl:flex-shrink-0;
+  }
+
+  .valueContactInfo {
+    @apply text-[#1F1F1F] xl:leading-[70.31px] leading-[28.13px] xl:text-[60px] text-[24px] font-normal;
+  }
+
+  #reviewModal.active {
+    @apply overflow-visible translate-x-0 opacity-100;
+  }
+
+  .containerInfoReviews.open {
+    @apply mt-5 grid-rows-1;
+  }
+
+  .mobileCardButtonReviewOpenInfo .iconArrow.active, #openListWorkName.active {
+    @apply transform -scale-y-100;
+  }
+
+  .mobileCardButtonReviewOpenInfo .iconArrow.active path, #openListWorkName.active path {
+    @apply fill-[#B2B2B2];
+  }
+
+  .containerWorkName input[type="checkbox"]:checked ~ .titleWorkName {
+    @apply text-[#4042E2];
+  }
+
+  .containerWorkName input[type="checkbox"]:checked ~ .iconCheckedContainer {
+    @apply border-[#4042E2];
+  }
+
+  .containerWorkName
+    input[type="checkbox"]:checked
+    ~ .iconCheckedContainer
+    svg {
+    @apply opacity-100;
+  }
+
+  #listWorkName.open {
+    @apply z-[1] overflow-visible opacity-100;
+  }
 }

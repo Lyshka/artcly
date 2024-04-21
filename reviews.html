@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <load src="src/components/Header/" />
+
+    <div class="flex-1">
+      <load src="src/components/General/BreadCrumb/" nav="" navLast="отзывы" />
+
+      <div class="relative">
+        <div class="xl:space-y-[200px] space-y-[60px] container-main mx-auto">
+          <main class="xl:space-y-[80px] space-y-[30px]">
+            <div class="xl:contents block space-y-[30px]">
+              <h6>Отзывы</h6>
+
+              <p class="valueContactInfo xl:hidden block uppercase">
+                Ваше мнение о нас
+              </p>
+            </div>
+
+            <div class="xl:space-y-[100px] space-y-[50px]">
+              <a href="">
+                <button>Оставить отзыв</button>
+              </a>
+
+              <load src="src/components/Reviews/List.html" />
+            </div>
+          </main>
+          <load src="src/components/General/Form/" class="px-0" />
+        </div>
+
+        <svg
+          class="custom:block hidden absolute left-0 top-1/2 -translate-y-1/2"
+          width="52"
+          height="262"
+          viewBox="0 0 52 262"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M-15 202.74L50.9421 260.279"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M-15 173.853L50.9421 231.391"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M-15 144.965L50.9421 202.74"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M-15 116.077L50.9421 173.853"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M-15 87.4263L50.9421 144.965"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M-15 58.5386L50.9421 116.077"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M-15 29.6509L50.9421 87.4262"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M-15 1L50.9421 58.5386"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+        </svg>
+
+        <svg
+          class="custom:block hidden absolute -right-[30.24px] top-[491px]"
+          width="106"
+          height="148"
+          viewBox="0 0 106 148"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M101.242 46.6516L141.24 0.999918"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M81.1602 46.6516L121.158 0.999918"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M61.0781 46.6516L101.241 0.999918"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M41.1641 46.6516L81.1618 0.999918"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M21.082 46.6516L61.0798 0.999918"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M1 46.6516L41.1624 0.999918"
+            stroke="#5957BB"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M129 47H33V147H129V47Z"
+            stroke="#5957BB"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <load src="src/components/Footer/" />
+    <load src="src/components/Reviews/Modal.html" />
+
+    <!-- <load src="src/components/General/Calculator/" /> -->
+
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/script/Reviews/index.ts"></script>
+  </body>
+</html>

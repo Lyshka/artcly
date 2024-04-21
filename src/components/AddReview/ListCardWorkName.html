@@ -1,0 +1,28 @@
+<label class="flex items-center gap-[5px] relative containerWorkName">
+  <input
+    class="w-full h-full absolute opacity-0 workNameInput"
+    type="checkbox"
+    id="workNameInput{=$number}"
+    value="{=$title}"
+  />
+
+  <div
+    class="flex w-4 h-4 border border-[#545454] justify-center items-center iconCheckedContainer"
+  >
+    <svg
+      class="flex-shrink-0 transition-all duration-300 opacity-0"
+      width="11"
+      height="8"
+      viewBox="0 0 11 8"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.49574 6.31171L0.888004 3.82401L0 4.66517L3.49574 8L11 0.841163L10.1182 0L3.49574 6.31171Z"
+        fill="#4042E2"
+      />
+    </svg>
+  </div>
+
+  <span class="titleWorkName transition-all duration-300">{=$title}</span>
+</label>

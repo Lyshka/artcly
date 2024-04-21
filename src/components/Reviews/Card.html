@@ -1,0 +1,64 @@
+<div
+  class="xl:py-[60px] py-[30px] first:pt-0 last:pb-0 xl:border-b border-b-[0.5px] border-[#ABAAD8] flex xl:flex-row flex-col justify-between last:border-b-0 containerCardReview"
+>
+  <div
+    class="xl:contents flex items-center justify-between gap-8 xl:w-auto w-full mobileCardButtonReviewOpenInfo"
+  >
+    <div class="xl:w-[520px] xl:space-y-[30px] space-y-5">
+      <h6 class="uppercase">{=$title}</h6>
+
+      <p class="text-[#ABAAD8]">{=$tags}</p>
+    </div>
+
+    <svg
+      class="xl:hidden block flex-shrink-0 transition-all duration-1000 iconArrow"
+      width="15"
+      height="25"
+      viewBox="0 0 15 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.72649 24.7071C7.11701 25.0976 7.75018 25.0976 8.1407 24.7071L14.5047 18.3431C14.8952 17.9526 14.8952 17.3195 14.5047 16.9289C14.1141 16.5384 13.481 16.5384 13.0904 16.9289L7.43359 22.5858L1.77674 16.9289C1.38622 16.5384 0.753051 16.5384 0.362526 16.9289C-0.0279982 17.3195 -0.0279982 17.9526 0.362526 18.3431L6.72649 24.7071ZM8.43359 24L8.43359 3.60725e-08L6.43359 -3.60725e-08L6.43359 24L8.43359 24Z"
+        fill="#605EB3"
+      />
+    </svg>
+  </div>
+
+  <div
+    class="xl:contents grid grid-rows-0 xl:overflow-visible overflow-hidden transition-all duration-1000 containerInfoReviews"
+  >
+    <div class="xl:contents flex flex-col gap-5 min-h-0">
+      <div
+        data-image="http://localhost:5173/{=$img}"
+        class="relative group cursor-pointer previewReviewImage xl:w-[151px] w-[104.08px]"
+      >
+        <div
+          class="absolute bg-[#605EB333] opacity-0 group-hover:opacity-100 backdrop-blur-[3px] flex justify-center items-center h-full transition-all duration-300 w-full"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.0024 11.4921H13.3943V6.85823H12.4729H11.5515V11.4921H6.88525V12.3443V13.346H11.5524V17.979H12.4738H13.3953V13.346H18.0024V12.4191C18.0014 11.907 18.0024 11.4921 18.0024 11.4921Z"
+              fill="#4042E2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M30 28.6388L21.6088 20.4877C23.6038 18.3115 24.8296 15.4334 24.8296 12.2663C24.8296 5.49138 19.2715 0 12.4148 0C5.55806 0 0 5.49138 0 12.2663C0 19.0412 5.55806 24.5326 12.4148 24.5326C15.3774 24.5326 18.0946 23.5038 20.2289 21.7934L28.5246 30C28.5246 30 28.8547 29.7184 29.2273 29.3498L30 28.6388ZM1.91019 12.2663C1.91019 17.9985 6.61325 22.6454 12.4148 22.6454C18.2164 22.6454 22.9194 17.9985 22.9194 12.2663C22.9194 6.53409 18.2164 1.88724 12.4148 1.88724C6.61325 1.88724 1.91019 6.53409 1.91019 12.2663Z"
+              fill="#4042E2"
+            />
+          </svg>
+        </div>
+        <img class="w-full" src="{=$img}" alt="{=$title}" />
+      </div>
+
+      <p class="xl:w-[790px]">{=$desc}</p>
+    </div>
+  </div>
+</div>

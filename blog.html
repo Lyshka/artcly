@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <load src="src/components/Header/" />
+
+    <div class="flex-1">
+      <load
+        src="src/components/General/BreadCrumb/"
+        nav=""
+        navLast="блог"
+      />
+
+      <div class="xl:space-y-[200px] space-y-[60px] container-main mx-auto">
+        <main class="xl:space-y-[60px] space-y-[30px]">
+          <h6>Блог</h6>
+
+          <load src="src/components/Service/Navigation.html" />
+          <load src="src/components/Service/NavigationMobile.html" />
+          <load src="src/components/Service/List.html" />
+
+          <button
+            class="flex xl:text-[26px] text-lg xl:leading-[30.47px] leading-[21.09px] text-center text-[#605EB3] border-none items-center xl:gap-[30px] gap-2.5 mx-auto"
+          >
+            Показать еще
+
+            <svg
+              class="flex-shrink"
+              width="61"
+              height="8"
+              viewBox="0 0 61 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659729 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM60 3.5L-3.85841e-06 3.50001L-3.77099e-06 4.50001L60 4.5L60 3.5Z"
+                fill="#605EB3"
+              />
+            </svg>
+          </button>
+        </main>
+        <load src="src/components/General/Form/" />
+      </div>
+    </div>
+
+    <load src="src/components/Footer/" />
+
+    <!-- <load src="src/components/General/Calculator/" /> -->
+
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/script/Service/index.ts"></script>
+  </body>
+</html>
