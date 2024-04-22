@@ -192,11 +192,13 @@
     @apply mt-5 grid-rows-1;
   }
 
-  .mobileCardButtonReviewOpenInfo .iconArrow.active, #openListWorkName.active {
+  .mobileCardButtonReviewOpenInfo .iconArrow.active,
+  #openListWorkName.active {
     @apply transform -scale-y-100;
   }
 
-  .mobileCardButtonReviewOpenInfo .iconArrow.active path, #openListWorkName.active path {
+  .mobileCardButtonReviewOpenInfo .iconArrow.active path,
+  #openListWorkName.active path {
     @apply fill-[#B2B2B2];
   }
 
@@ -217,5 +219,13 @@
 
   #listWorkName.open {
     @apply z-[1] overflow-visible opacity-100;
+  }
+
+  .text-blog-single ul {
+    @apply list-disc list-inside xl:mt-[30px] mt-4;
+  }
+
+  .text-blog-single ul li {
+    @apply xl:py-1 py-0.5;
   }
 }
