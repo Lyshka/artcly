@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#slider-work .swiper-slide-next img {
+#slider-work .swiper-slide-next img, #slider-work .swiper-slide-next .container-back-drop {
   @apply xl:!w-[443px] xl:!h-[291px] xl:border border-[#F7F7F7];
 }
 
@@ -227,5 +227,19 @@
 
   .text-blog-single ul li {
     @apply xl:py-1 py-0.5;
+  }
+
+  .marquee {
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }

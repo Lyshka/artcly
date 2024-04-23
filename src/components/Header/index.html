@@ -40,16 +40,16 @@
   <nav class="xl:block hidden">
     <ul class="flex items-center gap-[72px]">
       <li>
-        <a href="">кейсы</a>
+        <a class="hover:text-[#3E3BED]" href="">кейсы</a>
       </li>
 
       <li>
-        <a href="">услуги</a>
+        <a class="hover:text-[#3E3BED]" href="">услуги</a>
       </li>
     </ul>
   </nav>
 
-  <div class="relative">
+  <div class="relative group">
     <svg
       id="openMenu"
       role="button"
@@ -58,9 +58,9 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="40" height="2" fill="#333333" />
-      <rect y="12" width="30" height="2" fill="#333333" />
-      <rect y="24" width="20" height="2" fill="#333333" />
+      <rect width="40" height="2" class="group-hover:fill-[#4042E2] transition-all duration-300" fill="#333333" />
+      <rect y="12" width="30" height="2" class="group-hover:fill-[#4042E2] group-hover:w-[40px] transition-all duration-300" fill="#333333" />
+      <rect y="24" width="20" height="2" class="group-hover:fill-[#4042E2] group-hover:w-[40px] transition-all duration-300" fill="#333333" />
     </svg>
 
     <svg
@@ -73,7 +73,7 @@
     >
       <g clip-path="url(#clip0_2977_14242)">
         <g clip-path="url(#clip1_2977_14242)">
-          <path d="M1 1L29 29M1 29L29 1" stroke="#333333" stroke-width="2" />
+          <path d="M1 1L29 29M1 29L29 1" class="group-hover:stroke-[#4042E2] transition-all duration-300" stroke="#333333" stroke-width="2" />
         </g>
       </g>
       <defs>
@@ -89,20 +89,20 @@
 
   <div class="xl:flex hidden items-center gap-[67px]">
     <a href="#contactForm">
-      <button type="button">Обсудить проект</button>
+      <button class="hover:bg-[#4042E2] hover:text-white" type="button">Обсудить проект</button>
     </a>
 
     <div
       class="flex flex-col gap-[13px] text-[26px] leading-[30.47px] font-normal"
     >
-      <a href="tel:+375447224080">+375 (44) 722-40-80</a>
-      <a href="tel:+375292384383">+375 (29) 238-43-83</a>
+      <a class="hover:text-[#4042E2]" href="tel:+375447224080">+375 (44) 722-40-80</a>
+      <a class="hover:text-[#4042E2]" href="tel:+375292384383">+375 (29) 238-43-83</a>
     </div>
   </div>
 
   <a
     href="tel:+375447224080"
-    class="text-base leading-[18.75px] font-normal xl:hidden block"
+    class="text-base leading-[18.75px] hover:text-[#4042E2] font-normal xl:hidden block"
     >+375 (44) 722-40-80</a
   >
 </header>
