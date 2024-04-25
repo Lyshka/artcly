@@ -53,3 +53,58 @@ const subMenu = () => {
   });
 };
 subMenu();
+
+const mobileMenuLists = () => {
+  const mobileServiceButtunOpenMenu = document.getElementById(
+    "mobileServiceButtunOpenMenu"
+  ) as HTMLButtonElement;
+  const menuSecondPopupHeaderMobile = document.getElementById(
+    "menu-second-popup-header-mobile"
+  ) as HTMLElement;
+
+  let open = false;
+
+  mobileServiceButtunOpenMenu.onclick = () => {
+    open = !open;
+
+    if (!open) {
+      mobileServiceButtunOpenMenu.style.color = "#333333";
+      menuSecondPopupHeaderMobile.classList.remove("open");
+    } else {
+      mobileServiceButtunOpenMenu.style.color = "#4042E2";
+      menuSecondPopupHeaderMobile.classList.add("open");
+    }
+  };
+
+  const mobileOpenButtonSiteCreateMenuList = document.getElementById(
+    "mobileOpenButtonSiteCreateMenuList"
+  ) as HTMLButtonElement;
+  const menuMobileSiteCreationList = document.getElementById(
+    "menuMobileSiteCreationList"
+  ) as HTMLElement;
+  const mobileDownBlockInDown = document.getElementById(
+    "mobileDownBlockInDown"
+  ) as HTMLElement;
+  const mobileDownBlockInDown2 = document.getElementById(
+    "mobileDownBlockInDown2"
+  ) as HTMLElement;
+
+  let open2 = false;
+
+  mobileOpenButtonSiteCreateMenuList.onclick = () => {
+    open2 = !open2;
+
+    if (!open2) {
+      mobileOpenButtonSiteCreateMenuList.style.color = "#545454";
+      menuMobileSiteCreationList.classList.remove("open");
+      mobileDownBlockInDown.style.bottom = "0px";
+      mobileDownBlockInDown2.style.bottom = "0px";
+    } else {
+      mobileOpenButtonSiteCreateMenuList.style.color = "#4042E2";
+      menuMobileSiteCreationList.classList.add("open");
+      mobileDownBlockInDown.style.bottom = "-100px";
+      mobileDownBlockInDown2.style.bottom = "-100px";
+    }
+  };
+};
+mobileMenuLists();
