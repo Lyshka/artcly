@@ -2,7 +2,15 @@ const watchReviewHandle = () => {
   const previewReviewImageElemets = document.querySelectorAll<HTMLElement>(
     ".previewReviewImage"
   );
+
+  if (!previewReviewImageElemets) return;
+
   const reviewModal = document.getElementById("reviewModal") as HTMLElement;
+
+  if (!reviewModal) {
+    return;
+  }
+
   const closeModal = reviewModal.querySelector(
     ".closeModal"
   ) as HTMLButtonElement;
@@ -29,6 +37,8 @@ const openMenuInfoReview = () => {
   const containerCardReviewElements = document.querySelectorAll<HTMLElement>(
     ".containerCardReview"
   );
+
+  if (!containerCardReviewElements) return;
 
   containerCardReviewElements.forEach((containerCardReview) => {
     const containerInfoReviewsElement = containerCardReview.querySelector(

@@ -2,6 +2,9 @@ const handleImageInputInfo = () => {
   const inputFileReview = document.getElementById(
     "inputFileReview"
   ) as HTMLInputElement;
+
+  if (!inputFileReview) return;
+
   const imageName = document.getElementById("imageName") as HTMLElement;
 
   inputFileReview.onchange = (event: Event) => {
@@ -16,6 +19,9 @@ handleImageInputInfo();
 
 const openListWorkName = () => {
   const listWorkName = document.getElementById("listWorkName") as HTMLElement;
+
+  if (!listWorkName) return;
+
   const openListWorkName = document.getElementById(
     "openListWorkName"
   ) as HTMLButtonElement;
