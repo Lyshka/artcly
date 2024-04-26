@@ -2,8 +2,8 @@ const freeAuditHandle = () => {
   const modalFreeAudit = document.getElementById(
     "modalFreeAudit"
   ) as HTMLElement;
-  const closeModal = modalFreeAudit.querySelector(
-    ".closeModal"
+  const closeModal = document.getElementById(
+    "closeModalFreeAudit"
   ) as HTMLButtonElement;
   const openFreeAuditElements =
     document.querySelectorAll<HTMLButtonElement>(".openFreeAudit");

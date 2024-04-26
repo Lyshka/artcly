@@ -2,6 +2,9 @@ const filterService = () => {
   const listServicePage = document.getElementById(
     "listServicePage"
   ) as HTMLElement;
+
+  if (!listServicePage) return;
+
   const openServiceFilter = document.getElementById(
     "openServiceFilter"
   ) as HTMLButtonElement;

@@ -1,6 +1,8 @@
 const Quest = () => {
   const questCardElements = document.querySelectorAll(".questCard");
 
+  if (!questCardElements) return;
+
   questCardElements.forEach((questCard) => {
     questCard.addEventListener("click", () => {
       const arrowIconElement = questCard.querySelector(".arrowIcon");
@@ -10,7 +12,7 @@ const Quest = () => {
 
       arrowIconElement?.classList.toggle("active");
       arrowIconColorElement?.classList.toggle("active");
-      
+
       questText?.classList.toggle("open");
     });
   });
