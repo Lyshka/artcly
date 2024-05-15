@@ -1,14 +1,13 @@
 import IMask from "imask";
 
-const phoneInput = [
-  ...document.querySelectorAll(".phone-input"),
-] as HTMLInputElement[];
+const phoneInputs =
+  document.querySelectorAll<HTMLInputElement>('input[type="tel"]');
 
-phoneInput.forEach((el) => {
-  IMask(el, {
+phoneInputs.forEach((input) => {
+  IMask(input, {
     mask: [
       {
-        mask: "+375 (00) 000-00-00",
+        mask: "+375 (00) 000 00 00",
         lazy: false,
       },
     ],
