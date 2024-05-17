@@ -4,7 +4,7 @@ import "./script/General/headerMenu";
 import "./script/General/freeAudit";
 import "./script/AddReview/addReview";
 import "./script/Home/quest";
-import "./script/Home/workSlider";
+// import "./script/Home/workSlider";
 import "./script/Reviews/watchReview";
 import "./script/Service/filterService";
 import "./script/SingleAdvantege/singleAdventage";
